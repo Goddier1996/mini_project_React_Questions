@@ -29,7 +29,9 @@ body {
   justify-content: center;
   align-items: center;
   cursor: url("https://i.postimg.cc/q7R0vBGq/cursor-Start-Web.png"), pointer;
-  background: url("https://i.postimg.cc/c4TRTvp7/1.jpg");
+
+  background: url("https://i.postimg.cc/bw0ffHdZ/7799966-42827.jpg");
+  background-size: cover;
 }
 
 .app {
@@ -98,7 +100,7 @@ h4 {
 }
 
 img {
-  width: 14rem;
+  width: 150px;
 }
 
 .progress {
@@ -133,8 +135,8 @@ progress {
   font-family: inherit;
   color: inherit;
   font-size: 2rem;
-  border: 2px solid var(--color-dark);
-  background-color: var(--color-dark);
+  border: none;
+  background-color: #27b1ca9c;
   padding: 1.2rem 2.4rem;
   cursor: pointer;
   border-radius: 100px;
@@ -142,7 +144,7 @@ progress {
 }
 
 .btn:not([disabled]):hover {
-  background-color: var(--color-darkest);
+  background-color: rgba(0, 0, 0, 0.201);
 }
 
 .btn-option:not([disabled]):hover {
@@ -169,21 +171,25 @@ progress {
   text-align: left;
 }
 
+
+
 .btn-option.correct {
-  background-color: var(--color-theme);
-  border: 2px solid var(--color-theme);
+  background-color: green;
+  border: none;
   color: var(--color-light);
 }
 
 .btn-option.wrong {
-  background-color: var(--color-accent);
-  border: 2px solid var(--color-accent);
-  color: var(--color-darkest);
+  background-color: rgba(175, 36, 36, 0.975);
+  border: none;
+  color: white;
 }
 
 .answer {
   transform: translateX(2rem);
 }
+
+
 
 .result {
   background-color: var(--color-theme);
@@ -221,10 +227,10 @@ progress {
 .timer {
   float: left;
   font-size: 1.8rem;
-  color: var(--color-medium);
-  border: 2px solid var(--color-dark);
+  color: black;
   padding: 1.35rem 2.8rem;
   border-radius: 100px;
+  background: #ced4da;
 }
 
 /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */

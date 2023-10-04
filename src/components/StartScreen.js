@@ -8,12 +8,12 @@ function StartScreen() {
   return (
     <div className="start">
       <h2>Welcome to The React questions</h2>
-      <h3>{numQuestions} questions to test your React mastery</h3>
+      <h3>In This Game Have {numQuestions} questions</h3>
       <button
         className="btn btn-ui"
         onClick={() => dispatch({ type: "start" })}
       >
-        Let's start
+        Let's start test your React mastery
       </button>
     </div>
   );

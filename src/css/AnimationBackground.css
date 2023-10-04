@@ -34,8 +34,8 @@
   
   .wrapper div:nth-child(3) {
     top: 40%;
-    left: 40%;
-    animation: animate 3s linear infinite;
+    left: 10%;
+        animation: animate 3s linear infinite;
   }
   
   .wrapper div:nth-child(4) {
