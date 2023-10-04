@@ -106,7 +106,7 @@ function Provider({ children }) {
 
 
     const fetchDataQuestionsReact = () => {
-        process.env.REACT_APP_API
+        
         fetch(process.env.REACT_APP_API)
             .then((res) => res.json())
             .then((data) => dispatch({ type: "dataReceived", payload: data.questions }))
