@@ -1,5 +1,5 @@
 import Header from './HeaterTitle'
-import { useQuiz } from "../context/QuizContext";
+import { useQuiz } from "../context/Context";
 import Loader from './Loading';
 import Error from './Error';
 import StartScreen from './StartScreen';
@@ -11,10 +11,10 @@ import FinishScreen from './FinishScreen';
 import AnimationBackground from './AnimationBackground';
 
 
+
 const Home = () => {
 
   const { status } = useQuiz();
-
 
   return (
 
