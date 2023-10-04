@@ -34,7 +34,7 @@ body {
 }
 
 .main {
-  width: 580px;
+  width: 600px;
 }
 
 
@@ -55,7 +55,7 @@ body {
 
 @-moz-keyframes spin {
   50% {
-    -moz-transform: rotate(40deg);
+    -moz-transform: rotate(90deg);
   }
 }
 
@@ -177,6 +177,13 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.options p {
+  padding-left: 2%;
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=A9A9A9);
+  color: #000;
+  font-weight: 600;
+}
+
 .btn-option {
   width: 100%;
   text-align: left;
@@ -196,6 +203,7 @@ body {
 
 .answer {
   transform: translateX(2rem);
+  transform: rotate(2deg);
 }
 
 .showQuestion h4 {
