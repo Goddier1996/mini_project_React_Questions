@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: url("https://i.postimg.cc/q7R0vBGq/cursor-Start-Web.png"), pointer;
-  background: url("https://i.postimg.cc/bw0ffHdZ/7799966-42827.jpg");
+  background: url("../public/baground.webp");
   background-size: cover;
 }
 
