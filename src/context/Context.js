@@ -88,8 +88,6 @@ function reducer(state, action) {
 
 
 
-
-
 function Provider({ children }) {
 
 
@@ -109,7 +107,7 @@ function Provider({ children }) {
 
     const fetchDataQuestionsReact = () => {
 
-        fetch("https://demo4118744.mockable.io/questions")
+        fetch(process.env.REACT_APP_API)
             .then((res) => res.json())
             .then((data) => dispatch({ type: "dataReceived", payload: data.questions }))
             .catch((err) => dispatch({ type: "dataFailed" }));       
