@@ -10,12 +10,14 @@ function NextButton() {
     <>
       {(answer === null) ? null :
         (index < numQuestions - 1) ?
-          <button
-            className="btnNext"
-            onClick={() => dispatch({ type: "nextQuestion" })}
-          >
-            Next
-          </button>
+          <div className="styleNextQuestion">
+            <button
+              className="btnNext"
+              onClick={() => dispatch({ type: "nextQuestion" })}
+            >
+              Next
+            </button>
+          </div>
           :
           (index === numQuestions - 1) ?
             <button

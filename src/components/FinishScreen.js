@@ -19,7 +19,7 @@ function FinishScreen() {
 
 
     return (
-        <>
+        <div className="styleFinish">
             <p className="result">
                 <span>{emojiResult}</span> You scored <strong>{points}</strong> out of{" "}
                 {maxPossiblePoints} ({Math.ceil(percentage)}%)
@@ -31,7 +31,7 @@ function FinishScreen() {
             >
                 Restart Game
             </button>
-        </>
+        </div>
     );
 }
 

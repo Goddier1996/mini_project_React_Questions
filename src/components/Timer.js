@@ -24,10 +24,12 @@ function Timer() {
 
 
   return (
-    <div className="timer">
-      {mins < 10 && "0"}
-      {mins}:{seconds < 10 && "0"}
-      {seconds}
+    <div className="showStyleTimer">
+      <div className="timer">
+        {mins < 10 && "0"}
+        {mins}:{seconds < 10 && "0"}
+        {seconds}
+      </div>
     </div>
   );
 }
