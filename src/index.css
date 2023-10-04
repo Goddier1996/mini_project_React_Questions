@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
 
 * {
@@ -15,46 +14,15 @@ html {
 
 body {
   min-height: 100vh;
-  color: var(--color-light);
+  color: #f1f3f5;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: url("https://i.postimg.cc/q7R0vBGq/cursor-Start-Web.png"), pointer;
-
   background: url("https://i.postimg.cc/bw0ffHdZ/7799966-42827.jpg");
   background-size: cover;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.main {
-  width: 50rem;
-}
-
-.app-header {
-  margin-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.error {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  padding: 2rem;
-  background-color: #495057;
-  border-radius: 100px;
-}
-
-img {
-  width: 14rem;
-}
 
 h1 {
   font-family: "Codystar";
@@ -76,12 +44,62 @@ h4 {
   margin-bottom: 2.4rem;
 }
 
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 500px;
+}
+
+
+
+/* header style */
+.header {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  width: 150px;
+  -webkit-animation: spin 5s linear infinite;
+  -moz-animation: spin 5s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+@-moz-keyframes spin {
+  50% {
+    -moz-transform: rotate(40deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  50% {
+    -webkit-transform: rotate(40deg);
+  }
+}
+
+@keyframes spin {
+  50% {
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+
+
+/* start in home , show title button */
 .start {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
   letter-spacing: 1px;
   word-spacing: 2px;
   color: #fff;
@@ -90,10 +108,9 @@ h4 {
   padding: 5%;
 }
 
-img {
-  width: 150px;
-}
 
+
+/* show progress questions , when start a game */
 .progress {
   margin-bottom: 4rem;
   display: grid;
@@ -117,10 +134,13 @@ progress {
 }
 
 ::-webkit-progress-value {
-  background-color: #1098ad;
+  background-color: #3c4145;
   border-radius: 100px;
 }
 
+
+
+/* show options result */
 .btn {
   display: block;
   font-family: inherit;
@@ -162,8 +182,6 @@ progress {
   text-align: left;
 }
 
-
-
 .btn-option.correct {
   background-color: green;
   border: none;
@@ -180,8 +198,20 @@ progress {
   transform: translateX(2rem);
 }
 
+/* show timer */
+.timer {
+  float: left;
+  font-size: 1.8rem;
+  color: black;
+  padding: 1.35rem 2.8rem;
+  border-radius: 100px;
+  background: #ced4da;
+}
 
 
+
+
+/* show result when finish this game */
 .result {
   background-color: #1098ad;
   color: #f1f3f5;
@@ -204,26 +234,18 @@ progress {
   margin-bottom: 4.8rem;
 }
 
+
+
+/* show loading style when connect to website */
 .loader-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
   gap: 1.6rem;
-
   color: #ced4da;
   font-size: 1.4rem;
 }
-
-.timer {
-  float: left;
-  font-size: 1.8rem;
-  color: black;
-  padding: 1.35rem 2.8rem;
-  border-radius: 100px;
-  background: #ced4da;
-}
-
 
 .loader {
   width: 50px;
@@ -254,19 +276,25 @@ progress {
   }
 }
 
-/* ********** */
-/* First counter example */
-.counter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 6rem;
+
+
+/* message error , when not fetch data */
+.error {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 2rem;
+  background-color: #495057;
+  border-radius: 100px;
 }
 
-.counter * {
-  font-size: inherit;
-  padding: 0.8rem;
+
+
+
+
+@media(max-width:991px) {
+
+  .main {
+    width: 400px;
+  }
 }
