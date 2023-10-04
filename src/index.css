@@ -386,7 +386,7 @@ body {
   }
 
   .finishStyleBtn button {
-    margin-top: -5%;
+    margin-top: -13%;
     background: orange;
     font-size: 2rem;
     color: black;
@@ -397,7 +397,8 @@ body {
   .start,
   .showQuestion,
   .styleNextQuestion,
-  .styleFinish {
+  .styleFinish,
+  .finishStyleBtn {
     padding: 6%;
   }
 
