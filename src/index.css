@@ -15,7 +15,6 @@ html {
 body {
   min-height: 100vh;
   padding: 3.2rem;
-
   color: #f1f3f5;
   display: flex;
   justify-content: center;
@@ -23,8 +22,8 @@ body {
   cursor: url("https://i.postimg.cc/q7R0vBGq/cursor-Start-Web.png"), pointer;
   background: url("../public/baground.webp");
   background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 
 .app {
@@ -323,7 +322,7 @@ body {
 
   .showQuestion h4 {
     font-size: 16px;
-    margin-bottom: 2.4rem;
+    margin-top: -15%;
     background-color: #ced4dae3;
     border-radius: 100px;
     color: #3c4145;
@@ -336,11 +335,11 @@ body {
 
   .start h1 {
     font-family: "Codystar";
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .start h2 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 7%;
   }
 
@@ -361,7 +360,7 @@ body {
   .progress {
     font-size: 16px;
     padding: 6%;
-    margin-bottom: 2%;
+    margin-top: -7%;
   }
 
   .progress p {
@@ -372,6 +371,15 @@ body {
     width: 120px;
     text-align: center;
     font-size: 14px;
+  }
+
+  .btnNext{
+    margin-top: -13%;
+  }
+
+  .showStyleTimer{
+    margin-top: -18%;
+
   }
 
   .options,
