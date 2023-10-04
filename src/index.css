@@ -155,6 +155,7 @@ body {
 
 .btn:not([disabled]):hover {
   background-color: rgba(0, 0, 0, 0.201);
+  color: white;
 }
 
 .btn-option:not([disabled]):hover {
@@ -222,7 +223,6 @@ body {
 .btnNext:hover {
   background-color: rgba(0, 0, 0, 0.201);
 }
-
 
 /* show timer */
 .timer {
@@ -373,13 +373,23 @@ body {
     font-size: 14px;
   }
 
-  .btnNext{
+  .options {
+    margin-top: -5%;
+  }
+
+  .btnNext {
     margin-top: -13%;
   }
 
-  .showStyleTimer{
+  .showStyleTimer {
     margin-top: -18%;
+  }
 
+  .finishStyleBtn button {
+    margin-top: -5%;
+    background: orange;
+    font-size: 2rem;
+    color: black;
   }
 
   .options,

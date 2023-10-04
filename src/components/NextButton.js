@@ -20,12 +20,15 @@ function NextButton() {
           </div>
           :
           (index === numQuestions - 1) ?
-            <button
-              className="btn btn-ui"
-              onClick={() => dispatch({ type: "finish" })}
-            >
-              Finish
-            </button> : ""
+            <div className="finishStyleBtn">
+              <button
+                className="btn btn-ui"
+                onClick={() => dispatch({ type: "finish" })}
+              >
+                Finish
+              </button>
+            </div>
+            : ""
       }
     </>
   )
