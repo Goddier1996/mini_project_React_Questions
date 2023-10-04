@@ -13,7 +13,10 @@ Later i use serivce mockable.io add json file and create api link , and fetch da
 
 # video :
 
-https://github.com/Goddier1996/mini_project_React_Questions/assets/59862302/b70e5815-52fc-4694-ab1f-e9ac088e6bca
+
+https://github.com/Goddier1996/mini_project_React_Questions/assets/59862302/a9c32b79-0d15-43a2-bf03-335d1f69cfde
+
+
 
 
 # Images :
