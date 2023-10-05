@@ -1,12 +1,13 @@
 import { useQuiz } from "../context/Context";
 
 
-function NextButton() {
+const NextButton = () => {
 
   const { dispatch, answer, index, numQuestions } = useQuiz();
 
-  return (
 
+
+  return (
     <>
       {(answer === null) ? null :
         (index < numQuestions - 1) ?

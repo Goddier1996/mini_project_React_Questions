@@ -1,7 +1,7 @@
 import { useQuiz } from "../context/Context";
 
 
-function StartScreen() {
+const StartScreen = () => {
 
   const { numQuestions, dispatch } = useQuiz();
 

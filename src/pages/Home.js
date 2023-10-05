@@ -1,14 +1,14 @@
-import Header from './HeaterTitle'
+import Header from '../components/HeaterTitle'
 import { useQuiz } from "../context/Context";
-import Loader from './Loading';
-import Error from './Error';
-import StartScreen from './StartScreen';
-import Question from './Question';
-import Progress from './Progress';
-import Timer from './Timer';
-import NextButton from './NextButton';
-import FinishScreen from './FinishScreen';
-import AnimationBackground from './AnimationBackground';
+import Loader from '../components/loading_error/Loading';
+import Error from '../components/loading_error/Error';
+import StartScreen from '../components/StartScreen';
+import Question from '../components/Question';
+import Progress from '../components/Progress';
+import Timer from '../components/Timer';
+import NextButton from '../components/NextButton';
+import FinishScreen from '../components/FinishScreen';
+import AnimationBackground from '../components/animation/AnimationBackground';
 
 
 

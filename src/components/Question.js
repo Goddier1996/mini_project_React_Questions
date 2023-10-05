@@ -2,7 +2,7 @@ import { useQuiz } from "../context/Context";
 import Options from "./Options";
 
 
-function Question() {
+const Question = () => {
 
   const { questions, index } = useQuiz();
   const question = questions.at(index);

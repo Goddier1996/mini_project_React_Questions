@@ -88,7 +88,7 @@ function reducer(state, action) {
 
 
 
-function Provider({ children }) {
+const Provider = ({ children }) => {
 
 
     const [
@@ -106,15 +106,15 @@ function Provider({ children }) {
 
 
     const fetchDataQuestionsReact = () => {
-        
+
         fetch(process.env.REACT_APP_API)
             .then((res) => res.json())
             .then((data) => dispatch({ type: "dataReceived", payload: data.questions }))
-            .catch((err) => dispatch({ type: "dataFailed" }));       
+            .catch((err) => dispatch({ type: "dataFailed" }));
     }
 
 
-    useEffect( ()=> {
+    useEffect(() => {
         fetchDataQuestionsReact();
     }, []);
 

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useQuiz } from "../context/Context";
 
 
-function Timer() {
+const Timer = () => {
 
   const { dispatch, secondsRemaining } = useQuiz();
 

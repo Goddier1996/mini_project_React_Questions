@@ -1,7 +1,7 @@
 import { useQuiz } from "../context/Context";
 
 
-function FinishScreen() {
+const FinishScreen = () => {
 
     const { points, maxPossiblePoints, highScore, dispatch } = useQuiz();
 
